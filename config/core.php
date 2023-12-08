@@ -1,4 +1,4 @@
-<?php 
+<? 
 
 	require 'db.php';
 	require 't.php';
@@ -11,10 +11,13 @@
 	   }
 	}
 
+
+	$ver = 1.002;
+
+
 	// data
 	$core = new core;
 	$site = mysqli_fetch_array(db::query("select * from `site` where id = 1"));
-	$ver = 2.771;
 	$site_set = [
 		'preload' => true,
 		'header' => true,

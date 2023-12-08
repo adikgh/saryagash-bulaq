@@ -1,10 +1,10 @@
 <? if ($site_set['header'] == true): ?>
-	<div class="header <?=($site_set['header_wh'] == 'true'?'header_wh':'')?> <?=($site_set['header2'] == 'true'?'header2':'')?>">
+	<div class="header <?=($site_set['header_wh'] == 'true'?'header_wh':'')?> <?=(@$site_set['header2'] == 'true'?'header2':'')?>">
 		<div class="bl_c">
 			<div class="header_c">
 				<div class="header_l">
 					<a href="/" class="logo">
-						<div class="logo_i lazy_logo" data-src="/assets/img/logo/<?=($site_set['header_logo']=='cl'?'logo_wh.png':'logo_bl.png')?>"></div>
+						<div class="logo_i lazy_logo" data-src="/assets/img/logo/logo.png"></div>
 					</a>
 					<? if ($site_set['menu'] == true): ?>
 						<div class="cmenu">
